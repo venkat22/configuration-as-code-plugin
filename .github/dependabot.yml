@@ -1,0 +1,69 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: weekly
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: com.cloudbees.jenkins.plugins*
+    versions:
+    - ">= 0"
+  - dependency-name: io.jenkins.docker:docker-plugin
+    versions:
+    - ">= 0"
+  - dependency-name: io.jenkins.plugins*
+    versions:
+    - ">= 0"
+  - dependency-name: org.csanchez.jenkins.plugins*
+    versions:
+    - ">= 0"
+  - dependency-name: org.jenkins-ci.main:jenkins-core
+    versions:
+    - ">= 0"
+  - dependency-name: org.jenkins-ci.plugins*
+    versions:
+    - ">= 0"
+  - dependency-name: org.jenkinsci.plugins*
+    versions:
+    - ">= 0"
+  - dependency-name: com.amazonaws:aws-java-sdk-sns
+    versions:
+    - 1.11.1000
+    - 1.11.942
+    - 1.11.946
+    - 1.11.950
+    - 1.11.954
+    - 1.11.959
+    - 1.11.964
+    - 1.11.969
+    - 1.11.974
+    - 1.11.979
+    - 1.11.986
+    - 1.11.991
+    - 1.11.996
+  - dependency-name: org.testcontainers:vault
+    versions:
+    - 1.15.1
+    - 1.15.2
+  - dependency-name: org.jenkins-ci.main:maven-plugin
+    versions:
+    - "3.9"
+  - dependency-name: io.netty:netty-codec-http
+    versions:
+    - 4.1.58.Final
+  - dependency-name: com.google.errorprone:error_prone_annotations
+    versions:
+    - 2.5.1
+  - dependency-name: joda-time:joda-time
+    versions:
+    - 2.10.9
+  - dependency-name: com.github.docker-java:docker-java
+    versions:
+    - 3.2.7
+  - dependency-name: io.netty:netty-handler
+    versions:
+    - 4.1.45.Final
+  - dependency-name: org.apache.maven:maven-plugin-api
+    versions:
+    - 3.6.3
